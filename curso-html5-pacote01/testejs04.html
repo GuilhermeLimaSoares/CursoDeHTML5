@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>teste javaScript</title>
+	<meta charset="utf-8">
+	<script>
+		let quebrada = false;
+		function mudaLampada(tipo){
+			/*alert("Lampada Acendeu");*/
+			/*prompt("Digite seu nome: ");*/
+
+			if(!quebrada){
+			document.getElementById("luz").src = "C:/Users/Inmetrics.LP1439/Documents/CursoDeHTML5/curso-html5-pacote01/projeto-glass-html5/_imagens/"+ tipo + ".jpg";
+			if(tipo == 'lampada-quebrada'){
+				quebrada = true;
+			}
+						 }
+		}
+
+	</script>
+</head>
+<body>
+	<h1>Acenda a lâmpada</h1>
+	<!--<img src="C:\Users\Inmetrics.LP1439\Documents\CursoDeHTML5\curso-html5-pacote01\projeto-glass-html5\_imagens\lampada-apagada.jpg"onclick="acendeLampada()"/>-->
+
+	<!--<img src="C:\Users\Inmetrics.LP1439\Documents\CursoDeHTML5\curso-html5-pacote01\projeto-glass-html5\_imagens\lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()"/>-->
+
+	<img src="C:\Users\Inmetrics.LP1439\Documents\CursoDeHTML5\curso-html5-pacote01\projeto-glass-html5\_imagens\lampada-apagada.jpg" id="luz" onmouseover="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')" />
+
+	<!--<button onclick="acendeLampada()">Aperte aqui</button>-->
+</body>
+</html>
